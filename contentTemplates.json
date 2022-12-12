@@ -1,0 +1,37 @@
+{
+    "titleDoc": {
+        "nr_dzialki": "",
+        "obreb": "",
+        "powiat": "",
+        "woj": "",
+        "nr_zgloszenia": "",
+        "usluga": ""
+    },
+    "reportDoc": {
+        "usluga": "",
+        "obreb": "",
+        "nr_dzialki": "",
+        "nr_zgloszenia": "",
+        "wykonawca": "",
+        "rozpoczecie": "",
+        "zakonczenie": ""
+    },
+    "censusDoc": {
+        "jedn_ewid_id": "",
+        "jedn_ewid_nazwa": "",
+        "obr_ewid": "",
+        "obreb": "",
+        "nr_zgloszenia": "",
+        "idd": "",
+        "zakonczenie": ""
+    },
+    "inventoryDoc": {
+        "jedn_ewid_id": "",
+        "jedn_ewid_nazwa": "",
+        "nr_dzialki": "",
+        "obr_ewid": "",
+        "nr_zgloszenia": "",
+        "idd": "",
+        "obreb": ""
+    }
+}

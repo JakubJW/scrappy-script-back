@@ -29,12 +29,12 @@ app.get('/download', (req, res) => {
 
 app.post('/generateFiles', async (req, res) => {
     try {
-        const url  = req.body.url
-        const selectedDocuments = req.body.selectedDocuments
+        const url  = req.body.params.url
+        const selectedDocuments = req.body.params.selectedDocuments
         const context =  await scrapeData(url)
+
         fillTemplate(context, selectedDocuments).then(zipFiles(selectedDocuments))
-        res.status(200)
-        res.send(selectedDocuments)  
+        res.status(200).send("Documents generated")  
     } catch (error) {
         res.status(500).end()
     }

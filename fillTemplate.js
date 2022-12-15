@@ -61,7 +61,9 @@ export async function fillTemplate(scrapedData, requestedDocs) {
             type: "nodebuffer",
             compression: "DEFLATE",
         });
-    
+        
+        console.log(buf)
+
         fs.writeFileSync(path.resolve("./rendered/", requestedDocs[i].docName), buf)
 
     }

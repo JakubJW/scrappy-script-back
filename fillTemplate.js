@@ -62,9 +62,6 @@ export async function fillTemplate(scrapedData, requestedDocs) {
             compression: "DEFLATE",
         });
         
-        console.log(buf)
-
-        fs.writeFileSync(path.resolve("./rendered/", requestedDocs[i].docName), buf)
-
+        return [{ docName: requestedDocs[i].docName, binaryData: buf }]
     }
 }

@@ -1,4 +1,4 @@
-import PizZip from "pizzip"
+import PizZip from 'pizzip';
 import fs from 'fs'
 import path from "path";
 
@@ -12,10 +12,11 @@ export async function zipFiles(filesToZip){
     zip.folder("rendered"); //creates folder in a zip file
 
     for(var i = 0; i < filesToZip.length; i++) {
-        zip.file('rendered/' + filesToZip[i].docName, fs.readFileSync('./rendered/' + filesToZip[i].docName)) //appends docx files to folder created above
+        zip.file('rendered/siema.txt', 'miau') //appends docx files to folder created above
     }
 
     var content = zip.generate({ type: "nodebuffer", platform: process.platform });
+    console.log(content)
 
-    fs.writeFileSync('mydocuments.zip', content)
+    return {zipName: "mydocuments.zip", binaryData: content}
 }
